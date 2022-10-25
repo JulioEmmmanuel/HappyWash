@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_orden">
+
+    <TextView
+        android:id="@+id/titulo_tintoreria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:backgroundTint="#2196F3"
+        android:text="Tintorería"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/ropa_tarjeta"
+        android:layout_width="match_parent"
+        android:textAlignment="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imagen_sueter"
+            app:layout_constraintTop_toBottomOf="@+id/desc_sueter">
+
+            <Button
+                android:id="@+id/menos_sueter"
+                android:layout_width="52dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#03A9F4"
+                android:foregroundTint="#FEFFFFFF"
+                android:text="-"
+                android:textColor="#FCFFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/cant_sueter"
+                android:layout_width="27dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/mas_sueter"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#03A9F4"
+                android:text="+"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imagen_sueter"
+            android:layout_width="136dp"
+            android:layout_height="156dp"
+            android:src="@drawable/sueter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/sueter" />
+
+        <LinearLayout
+            android:id="@+id/desc_sueter"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imagen_sueter"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.16000003">
+
+            <TextView
+                android:id="@+id/texto_sueter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Suéter"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/precio_sueter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$55.00"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/ropa_tarjeta"
+        android:layout_width="match_parent"
+        android:textAlignment="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imagen_pantalon"
+            app:layout_constraintTop_toBottomOf="@+id/desc_pantalon">
+
+            <Button
+                android:id="@+id/menos_pantalon"
+                android:layout_width="52dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#03A9F4"
+                android:foregroundTint="#FEFFFFFF"
+                android:text="-"
+                android:textColor="#FCFFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/cant_pantalon"
+                android:layout_width="27dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/mas_pantalon"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#03A9F4"
+                android:text="+"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imagen_pantalon"
+            android:layout_width="136dp"
+            android:layout_height="156dp"
+            android:src="@drawable/pantalon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/pantalon" />
+
+        <LinearLayout
+            android:id="@+id/desc_pantalon"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imagen_pantalon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.16000003">
+
+            <TextView
+                android:id="@+id/texto_pantalon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pantalón"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/precio_pantalon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$35.00"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/ropa_tarjeta"
+        android:layout_width="match_parent"
+        android:textAlignment="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imagen_vestido"
+            app:layout_constraintTop_toBottomOf="@+id/desc_vestido">
+
+            <Button
+                android:id="@+id/menos_vestido"
+                android:layout_width="52dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#03A9F4"
+                android:foregroundTint="#FEFFFFFF"
+                android:text="-"
+                android:textColor="#FCFFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/cant_vestido"
+                android:layout_width="27dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/mas_vestido"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#03A9F4"
+                android:text="+"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imagen_vestido"
+            android:layout_width="136dp"
+            android:layout_height="156dp"
+            android:src="@drawable/vestido"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/vestido" />
+
+        <LinearLayout
+            android:id="@+id/desc_vestido"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imagen_vestido"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.16000003">
+
+            <TextView
+                android:id="@+id/texto_vestido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vestido"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/precio_vestido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$40.00"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/ropa_tarjeta"
+        android:layout_width="match_parent"
+        android:textAlignment="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imagen_traje"
+            app:layout_constraintTop_toBottomOf="@+id/desc_traje">
+
+            <Button
+                android:id="@+id/menos_traje"
+                android:layout_width="52dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#03A9F4"
+                android:foregroundTint="#FEFFFFFF"
+                android:text="-"
+                android:textColor="#FCFFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/cant_traje"
+                android:layout_width="27dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/mas_traje"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#03A9F4"
+                android:text="+"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imagen_traje"
+            android:layout_width="136dp"
+            android:layout_height="156dp"
+            android:src="@drawable/traje"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/traje" />
+
+        <LinearLayout
+            android:id="@+id/desc_traje"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imagen_traje"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.16000003">
+
+            <TextView
+                android:id="@+id/texto_traje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Traje"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/precio_traje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$60.00"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/continuar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3F51B5"
+        android:clickable="true"
+        app:srcCompat="@drawable/continuar" />
+
+</LinearLayout>
